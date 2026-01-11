@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .global-food-bg {
+    background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1920&q=100");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  .dark .global-food-bg {
+    filter: brightness(0.6);
+  }
+}
+/* Hide scrollbar for all scrollable elements */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+/* Hide scrollbar but keep scroll functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}

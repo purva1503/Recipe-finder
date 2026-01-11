@@ -1,0 +1,21 @@
+/* BACKGROUND IMAGE LAYER */
+.global-food-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1920&q=100");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  /* ⭐ Change blur strength here */
+  filter: blur(8px);   /* <---- Adjust this number */
+
+  z-index: -1;
+}
+
+/* Dark Mode */
+.dark .global-food-bg::before {
+  filter: blur(8px) brightness(0.6);
+}
